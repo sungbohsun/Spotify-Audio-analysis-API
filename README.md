@@ -7,7 +7,7 @@ https://developer.spotify.com/dashboard/login
 https://developer.spotify.com/documentation/web-api/reference/player/get-the-users-currently-playing-track/
 
 
-    **set id & secret **
+set id & secret
     ```python
     from sung_spotify import SpotifyAPI
     client_id = '7b53768ec42646b08540bc929483ef5e'
@@ -17,7 +17,7 @@ https://developer.spotify.com/documentation/web-api/reference/player/get-the-use
     spotify.perform_auth()
     access_token = spotify.access_token
     ```
-    
+use singer & song_name to get song_id   
     ```python
     singer = '周杰倫'
     song_name = '簡單愛'
