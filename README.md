@@ -20,22 +20,22 @@ access_token = spotify.access_token
 ```
     
 ## use singer & song_name to get song_id   
-    ```python
-    singer = '周杰倫'
-    song_name = '簡單愛'
-    track_id = spotify.search_id(singer,song_name)
-    print(singer,song_name,track_id)
-    ```
-######
+
+```python
+singer = '周杰倫'
+song_name = '簡單愛'
+track_id = spotify.search_id(singer,song_name)
+print(singer,song_name,track_id)
+```
     200 in step one <br>
     周杰倫 簡單愛 5Jtg0qcTKMHq3HjPVGRFAi
 
 ## use id to search Spotify Audio analysis    
-    ```python
-    #use id to search Spotify Audio analysis
-    #singer & song_name only use to save file
-    spotify.analysis(singer,song_name,track_id)
-    ```
+```python
+#use id to search Spotify Audio analysis
+#singer & song_name only use to save file
+spotify.analysis(singer,song_name,track_id)
+```
     200 in audio-analysis <br> 
     success save audio-analysis_周杰倫_簡單愛.json
     
