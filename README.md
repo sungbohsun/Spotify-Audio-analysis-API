@@ -27,7 +27,7 @@ song_name = '簡單愛'
 track_id = spotify.search_id(singer,song_name)
 print(singer,song_name,track_id)
 ```
-    200 in step one <br>
+    200 in step one 
     周杰倫 簡單愛 5Jtg0qcTKMHq3HjPVGRFAi
 
 ## use id to search Spotify Audio analysis    
@@ -36,21 +36,21 @@ print(singer,song_name,track_id)
 #singer & song_name only use to save file
 spotify.analysis(singer,song_name,track_id)
 ```
-    200 in audio-analysis <br> 
+    200 in audio-analysis 
     success save audio-analysis_周杰倫_簡單愛.json
     
 ## get spotify play list song_name singer song_id <br>
   you can copy play list id on spotify app
-    ```python
-    spotify.playlist_songid('37i9dQZF1DX4sWSpwq3LiO')
-    ```
-    200 <br>
+```python
+spotify.playlist_songid('37i9dQZF1DX4sWSpwq3LiO')
+```
+    200 
     save playlist as Peaceful Piano.csv
 ## get current playing song singer & song_name & track_id
-    ```python
-    key = 'BQBl9AfhhgYBqHFMFaS_q4H1hA0mRi_9pJ-co4JYNYT6zmGshYaY2tLDiU5Hns6f8DFLbZ6iz5oQKKXR8wKDjEIusoPiVI5HhRlxRLRqXo0dBYM8ixS7-qSyPgxcXSjcN4McpWWpCxRZvOPXh-ANzIPLTPzPwQ'
-    singer,song_name,track_id = spotify.current_song(key)
-    print(singer,song_name,track_id)
-    ```
-    200 in step one <br>
+```python
+key = 'BQBl9AfhhgYBqHFMFaS_q4H1hA0mRi_9pJ-co4JYNYT6zmGshYaY2tLDiU5Hns6f8DFLbZ6iz5oQKKXR8wKDjEIusoPiVI5HhRlxRLRqXo0dBYM8ixS7-qSyPgxcXSjcN4McpWWpCxRZvOPXh-ANzIPLTPzPwQ'
+singer,song_name,track_id = spotify.current_song(key)
+print(singer,song_name,track_id)
+```
+    200 in step one 
     Avril Lavigne Head Above Water 7gY3cyGcB2wnk2xDXiA0pe
