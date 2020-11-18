@@ -17,8 +17,8 @@ https://developer.spotify.com/documentation/web-api/reference/player/get-the-use
     spotify.perform_auth()
     access_token = spotify.access_token
     ```
-200 in step one
-周杰倫 簡單愛 5Jtg0qcTKMHq3HjPVGRFAi
+    200 in step one
+    周杰倫 簡單愛 5Jtg0qcTKMHq3HjPVGRFAi
 
 * use singer & song_name to get song_id   
     ```python
