@@ -1,7 +1,10 @@
 # spotify-api
 Spotify-Audio-analysis-API can get the the json file on https://spotify-audio-analysis.glitch.me/ <br>
-Also can get the song's id in playlist or current playing song
+
+also can get the song's id in playlist or current playing song
+
 ![GITHUB]( https://github.com/sungbohsun/Spotify-Audio-analysis-API/blob/main/SpotifyAudioAnalysis.png?raw=true "SpotifyAudioAnalysis.png")
+
 you can get everything in spotify_api.ipynb
 
 *  step1. to get id and secret in spotify development dashboard <br>
@@ -22,7 +25,7 @@ spotify.perform_auth()
 access_token = spotify.access_token
 ```
     
-## use singer, song name to get song id   
+## use singer, song's name to get song id   
 
 ```python
 singer = '周杰倫'
@@ -42,14 +45,14 @@ spotify.analysis(singer,song_name,track_id)
     200 in audio-analysis 
     success save audio-analysis_周杰倫_簡單愛.json
     
-## get spotify playlist song name, singer, song id <br>
+## get spotify playlist song's name, singer, song id <br>
   you can copy play list id on spotify app
 ```python
 spotify.playlist_songid('37i9dQZF1DX4sWSpwq3LiO')
 ```
     200 
     save playlist as Peaceful Piano.csv
-## get current playing song singer, song name, song id
+## get current playing song's singer, song name, song id
 ```python
 key = 'BQBl9AfhhgYBqHFMFaS_q4H1hA0mRi_9pJ-co4JYNYT6zmGshYaY2tLDiU5Hns6f8DFLbZ6iz5oQKKXR8wKDjEIusoPiVI5HhRlxRLRqXo0dBYM8ixS7-qSyPgxcXSjcN4McpWWpCxRZvOPXh-ANzIPLTPzPwQ'
 singer,song_name,track_id = spotify.current_song(key)
