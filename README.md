@@ -37,8 +37,18 @@ https://developer.spotify.com/documentation/web-api/reference/player/get-the-use
     200 in audio-analysis <br> 
     success save audio-analysis_周杰倫_簡單愛.json
     
-* get spotify play list song_name singer song_id
+* get spotify play list song_name singer song_id <br>
   you can copy play list id on spotify app
     ```python
     spotify.playlist_songid('37i9dQZF1DX4sWSpwq3LiO')
     ```
+    200 <br>
+    save playlist as Peaceful Piano.csv
+* get current playing song singer & song_name & track_id
+    ```python
+    key = 'BQBl9AfhhgYBqHFMFaS_q4H1hA0mRi_9pJ-co4JYNYT6zmGshYaY2tLDiU5Hns6f8DFLbZ6iz5oQKKXR8wKDjEIusoPiVI5HhRlxRLRqXo0dBYM8ixS7-qSyPgxcXSjcN4McpWWpCxRZvOPXh-ANzIPLTPzPwQ'
+    singer,song_name,track_id = spotify.current_song(key)
+    print(singer,song_name,track_id)
+    ```
+    200 in step one <br>
+    Avril Lavigne Head Above Water 7gY3cyGcB2wnk2xDXiA0pe
