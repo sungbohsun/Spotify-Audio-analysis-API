@@ -1,7 +1,7 @@
 # spotify-api
 Spotify-Audio-analysis-API can get the the json file on https://spotify-audio-analysis.glitch.me/ <br>
 Also can get the song's id in playlist or current playing song
-
+![GITHUB]( https://github.com/sungbohsun/Spotify-Audio-analysis-API/blob/main/SpotifyAudioAnalysis.png?raw=true "SpotifyAudioAnalysis.png")
 you can get everything in spotify_api.ipynb
 
 *  step1. to get id and secret in spotify development dashboard <br>
