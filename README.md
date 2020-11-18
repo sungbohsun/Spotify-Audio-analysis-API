@@ -1,4 +1,4 @@
-# spotify-api
+# Spotify-Audio-analysis-API
 Spotify-Audio-analysis-API can get the the json file on https://spotify-audio-analysis.glitch.me/ <br>
 
 also can get the song's id in playlist or current playing song
