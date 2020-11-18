@@ -17,9 +17,7 @@ https://developer.spotify.com/documentation/web-api/reference/player/get-the-use
     spotify.perform_auth()
     access_token = spotify.access_token
     ```
-    200 in step one
-    周杰倫 簡單愛 5Jtg0qcTKMHq3HjPVGRFAi
-
+    
 * use singer & song_name to get song_id   
     ```python
     singer = '周杰倫'
@@ -27,9 +25,20 @@ https://developer.spotify.com/documentation/web-api/reference/player/get-the-use
     track_id = spotify.search_id(singer,song_name)
     print(singer,song_name,track_id)
     ```
+    200 in step one <br>
+    周杰倫 簡單愛 5Jtg0qcTKMHq3HjPVGRFAi
+
 * use id to search Spotify Audio analysis    
     ```python
     #use id to search Spotify Audio analysis
     #singer & song_name only use to save file
     spotify.analysis(singer,song_name,track_id)
+    ```
+    200 in audio-analysis <br> 
+    success save audio-analysis_周杰倫_簡單愛.json
+    
+* get spotify play list song_name singer song_id
+  you can copy play list id on spotify app
+    ```python
+    spotify.playlist_songid('37i9dQZF1DX4sWSpwq3LiO')
     ```
